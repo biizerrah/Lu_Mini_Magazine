@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lu Mini Magazine</title>
+</head>
+<body>
+   <main>
+        <section id="inicio"></section>
+        <section id="produtos">
+            <h1>Nossos Produtos</h1>
+            <div>
+                <img src="{{ url_for('static', filename='assets/bazar01.png')}}" 
+                     alt="A imagem apresenta um local com varias roupas, remetendo a um bazar"
+                     width="500px">
+                <a href="{{ url_for('bazar') }}">
+                    <button>Bazar</button>
+                </a>
+            </div>
+            <div>
+                <a href="{{ url_for('sequilhos') }}">
+                    <button>Sequilhos</button>
+                </a>
+            </div>
+        </section>
+        <section id="final"></section>
+   </main>
+</body>
+</html>
