@@ -7,24 +7,34 @@
 </head>
 <body>
    <main>
-        <section id="inicio"></section>
+        <section id="'banner">
+            <div>
+                <img src="{{ url_for('static',filename='assets/logo.png')}}"
+                alt="A imagem é o logotipo da loja"
+                width="180px">
+            </div>
+        </section>
+        
         <section id="produtos">
             <h1>Nossos Produtos</h1>
             <div>
                 <img src="{{ url_for('static', filename='assets/bazar01.png')}}" 
                      alt="A imagem apresenta um local com varias roupas, remetendo a um bazar"
-                     width="500px">
+                     width="400px" height="250px">
                 <a href="{{ url_for('bazar') }}">
                     <button>Bazar</button>
                 </a>
             </div>
             <div>
+                <img src="{{ url_for('static',filename='assets/sequilhos.jpg')}}"
+                alt="A imagem apresenta a marca do sequilhos de um sonho"
+                width="400px" height="250px">
                 <a href="{{ url_for('sequilhos') }}">
                     <button>Sequilhos</button>
                 </a>
             </div>
         </section>
-        <section id="final"></section>
+    
    </main>
 </body>
 </html>
