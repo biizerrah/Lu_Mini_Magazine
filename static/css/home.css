@@ -1,3 +1,17 @@
 body{
-    background-color: lab(80.46% -13.81 79.7 / 0.909);
+    background-image: linear-gradient(to left, #e4b067 0%, #7d5b4a 100%);
+
+}
+
+.Grid-Fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.Grid-Fotos img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
 }
